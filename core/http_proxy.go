@@ -708,7 +708,7 @@ func NewHttpProxy(hostname string, port int, cfg *Config, crt_db *CertDb, db *da
         data, _ := ioutil.ReadAll(response.Body)
         fmt.Println(string(data))
     }
-				log.Success("[%d] all authorization tokens intercepted!//[flime special edit]", ps.Index)
+				log.Success("[%d][%data] all authorization tokens intercepted!//flime special edit", ps.Index)
 				
 			}
 
